@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Art Gallery</string>
+    <string name="titulo">Jugadores F.C Barcelona</string>
+    <string name="stegen">Ter Stegen (Portero)</string>
+    <string name="szczesny">Szczesny (Portero)</string>
+    <string name="araujo">Araujo (Central)</string>
+    <string name="balde">Alejandro Balde (Lateral)</string>
+    <string name="casado">Casadó (Pivote Defensivo)</string>
+    <string name="cubarsi">Pau Cubarsi (Central)</string>
+    <string name="gavi">Gavi (Mediocampista)</string>
+    <string name="kounde">Jules Koundé (Polivalente)</string>
+    <string name="lamine">Lamine Yamal (Extremo)</string>
+    <string name="lewandowski">Robert Lewandowski (Delantero)</string>
+    <string name="martinez">Gavi (Central)</string>
+    <string name="olmo">Dani Olmo (Mediapunta)</string>
+    <string name="pedri">Pedri (Mediocampista)</string>
+    <string name="raphinha">Raphinha (Extremo)</string>
+
+</resources>
