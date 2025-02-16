@@ -17,6 +17,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -27,6 +29,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -42,9 +45,15 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ArtGalleryTheme {
-                PlayerPanel()
+            Surface(
+                modifier = Modifier.fillMaxSize(),
+                color = Color(85, 95, 196, 255)
+            ) {
+                ArtGalleryTheme {
+                    PlayerPanel()
+                }
             }
+
         }
     }
 }
@@ -114,7 +123,11 @@ fun PlayerPanel() {
                 onClick = {
                     result = previousImage(result)
                 }, modifier = Modifier
-                    .padding(12.dp)
+                    .padding(12.dp),
+                        colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFFC9B954),
+                contentColor = Color.White
+            )
             ) {
                 Text("Previous")
             }
@@ -122,7 +135,12 @@ fun PlayerPanel() {
                 onClick = {
                     result = nextImage(result)
                 }, modifier = Modifier
-                    .padding(12.dp)
+                    .padding(12.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFFC9B954),
+                    contentColor = Color.White
+
+                )
             ) {
                 Text("Next")
             }
