@@ -48,7 +48,7 @@ internal fun previousImage(result : Int) : Int {
 }
 ```
 ## First look of the app
-![Initial Layoyt](app/src/main/res/drawable-nodpi/inicioapp.png)
+<img src="app/src/main/res/drawable-nodpi/inicioapp.png" alt="Initial Layout" width="220"> 
 
 ## Tests
 This app has two differents kind of tests, Local and Instrumentation tests.
