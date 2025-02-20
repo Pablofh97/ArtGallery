@@ -9,6 +9,7 @@ I've work with buttons, two in this case, one with the functionality of going to
  ![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack-Compose-blue) ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white)
   
   **Training Course**: <a href="https://developer.android.com/courses/android-basics-compose/course" target="_blank">https://developer.android.com/courses/android-basics-compose/course</a>
+  Get the app [Here](#get-the-code)
 
   ## Next button functionality
   ```Kotlin
@@ -34,7 +35,7 @@ internal fun previousImage(result : Int) : Int {
     return resultImage
 }
 ```
-This two functions have been used on the [Tests](#tests) directories. They have the @VisibleForTesting annotation.
+This two functions have been used on the [Tests](#tests) directories. They have @VisibleForTesting annotation.
 ```Kotlin
 @VisibleForTesting
 internal fun previousImage(result : Int) : Int {
@@ -148,4 +149,8 @@ class ArtGalleryUITests {
         composeTestRule.onNodeWithText(expectedText).assertExists()
     }
 }
+```
+## Get the code
+```bash
+git clone https://github.com/Pablofh97/ArtGallery.git
 ```
