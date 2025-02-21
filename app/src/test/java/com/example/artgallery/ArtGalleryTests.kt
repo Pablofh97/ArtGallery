@@ -4,7 +4,7 @@ import junit.framework.TestCase.assertEquals
 import org.junit.Test
 
 class ArtGalleryTests {
-    //En los test pruebo los casos límites
+    //Test the borderline cases
     @Test
     fun caculateNextImage() {
         var result = 14
@@ -16,6 +16,14 @@ class ArtGalleryTests {
     fun calculatePreviousImage() {
         var result = 1
         result = previousImage(result)
+        assertEquals(14,result)
+    }
+    @Test
+    fun calculateTwoPreviousOneNextImage() {
+        var result = 1
+        result = previousImage(result)
+        result = previousImage(result)
+        result = nextImage(result)
         assertEquals(14,result)
     }
 }
