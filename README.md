@@ -10,7 +10,7 @@ This is a basic app I've made for learning about Android Studio with Jetpack Com
 It's mission is showing the players of a football team (F.C Barcelona). I've upload 14 players with their names 
 and positions.
 
-I've work with buttons, two in this case, one with the functionality of going to the previous image and the other button for going to the next image.
+I've worked with buttons, two in this case, one with the functionality of going to the previous image and the other button for going to the next image.
 ## Languages and Tools
 
  ![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack-Compose-blue) ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white)
@@ -59,9 +59,11 @@ internal fun previousImage(result : Int) : Int {
 ```
 ## First look of the app
 <a><img src="app/src/main/res/drawable-nodpi/inicioapp.png" alt="Initial Layout" width="220"></a>
-<img src="app/src/main/res/drawable/szcenzy.png" alt="NextButton" width="223">
-<img src="app/src/main/res/drawable/lamine.png" alt="Lamine" width="222">
-<img src="app/src/main/res/drawable/lewandowski.png" alt="Lewandowski" width="219">
+<a><img src="app/src/main/res/drawable/szcenzy.png" alt="NextButton" width="223"></a>
+<a><img src="app/src/main/res/drawable/lamine.png" alt="Lamine" width="222"></a>
+<a><img src="app/src/main/res/drawable/lewandowski.png" alt="Lewandowski" width="219"></a>
+
+<p>The first image is Ter Stegen, the goalkeeper, and the last one Lewandowski (Striker). So, if we press previous at the start, the app show us Lewandowski, and if we go on with next button, Ter Stegen appears.</p>
 
 ## Tests
 This app has two differents kind of tests, Local and Instrumentation tests.
