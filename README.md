@@ -1,10 +1,17 @@
 # Android App
+- [Language and tools](#languages-and-tools)
+- [Next button functionality](#next-button-functionality)
+- [Previous button functionality](#previous-button-functionality)
+- [App appereance](#first-look-of-the-app)
+- [Tests](#tests)
+
+
 This is a basic app I've made for learning about Android Studio with Jetpack Compose.
 It's mission is showing the players of a football team (F.C Barcelona). I've upload 14 players with their names 
 and positions.
 
 I've work with buttons, two in this case, one with the functionality of going to the previous image and the other button for going to the next image.
-## 🛠️ Languages and Tools
+## Languages and Tools
 
  ![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack-Compose-blue) ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white)
   
@@ -75,6 +82,14 @@ class ArtGalleryTests {
         result = previousImage(result)
         assertEquals(14,result)
     }
+    @Test
+    fun calculateTwoPreviousOneNextImage() {
+        var result = 1
+        result = previousImage(result)
+        result = previousImage(result)
+        result = nextImage(result)
+        assertEquals(14,result)
+    }
 }
 ```
 ### Instrumentation test
@@ -114,7 +129,7 @@ class ArtGalleryUITests {
                 PlayerPanel()
             }
         }
-        // Obtener el contexto de la prueba
+
         val context = InstrumentationRegistry.getInstrumentation().targetContext
         val expectedText = context.getString(R.string.szczesny) // Obtener el texto real
         composeTestRule.onNodeWithText("Next").performClick()
@@ -123,16 +138,11 @@ class ArtGalleryUITests {
 
     @Test
     fun previousAndThreeTimeNext() {
-        // Obtener el contexto ANTES de setContent
-        val context = InstrumentationRegistry.getInstrumentation().targetContext
-
         composeTestRule.setContent {
             ArtGalleryTheme {
                 PlayerPanel()
             }
         }
-        // Asegurar que la UI está cargada antes de interactuar
-        composeTestRule.waitForIdle()
 
         // Simular 3 clics en "Next"
         repeat(3) {
@@ -141,12 +151,8 @@ class ArtGalleryUITests {
 
         // Simular 1 clic en "Previous"
         composeTestRule.onNodeWithText("Previous").assertExists().performClick()
-
-        // Obtener el string correcto desde los recursos
-        val expectedText = context.getString(R.string.araujo)
-
         // Verificar que la imagen esperada aparece en la UI
-        composeTestRule.onNodeWithText(expectedText).assertExists()
+        composeTestRule.onNodeWithText("Araujo (Central)").assertExists()
     }
 }
 ```
