@@ -14,6 +14,8 @@ I've work with buttons, two in this case, one with the functionality of going to
 ## Languages and Tools
 
  ![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack-Compose-blue) ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white)
+ ![Junit](https://img.shields.io/badge/junit-%23E33332?logo=junit5&logoColor=white)
+
   
   **Training Course**: <a href="https://developer.android.com/courses/android-basics-compose/course" target="_blank">https://developer.android.com/courses/android-basics-compose/course</a>
   Get the app [Here](#get-the-code)
@@ -56,7 +58,10 @@ internal fun previousImage(result : Int) : Int {
 }
 ```
 ## First look of the app
-<img src="app/src/main/res/drawable-nodpi/inicioapp.png" alt="Initial Layout" width="220"> 
+<a><img src="app/src/main/res/drawable-nodpi/inicioapp.png" alt="Initial Layout" width="220"></a>
+<img src="app/src/main/res/drawable/szcenzy.png" alt="NextButton" width="223">
+<img src="app/src/main/res/drawable/lamine.png" alt="Lamine" width="222">
+<img src="app/src/main/res/drawable/lewandowski.png" alt="Lewandowski" width="219">
 
 ## Tests
 This app has two differents kind of tests, Local and Instrumentation tests.
