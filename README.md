@@ -9,8 +9,8 @@
 
 >[!TIP]
 >You can copy the code using
->```
-> This right icon
+>``` 
+> This right icon                                            --------------------------------------------------------->
 >```
 
 
@@ -113,7 +113,12 @@ class ArtGalleryTests {
         assertEquals(14,result)
     }
 }
+
 ```
+
+If all tests pass correctly, the exit code will be :
+
+<a> <img src="app/src/main/res/drawable/localtest.png" alt="LocalTest" width="800"></a>
 ### Instrumentation test
 Instrumentation tests test an actual instance of the app and its UI, so the UI content must be set, similar to how the content is set in the ```onCreate()``` method of the MainActivity.kt file when you wrote the code for the Tip Time app. 
 ```Kotlin
@@ -179,7 +184,11 @@ class ArtGalleryUITests {
     }
 }
 ```
+If all tests pass correctly, the exit code will be :
+
+<a> <img src="app/src/main/res/drawable/uitest.png" alt="LocalTest" width="800"></a>
+
 ## Get the code
-```bash
+```Bash
 git clone https://github.com/Pablofh97/ArtGallery.git
 ```
