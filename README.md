@@ -72,10 +72,10 @@ internal fun previousImage(result : Int) : Int {
 }
 ```
 ## First look of the app
-<a><img src="app/src/main/res/drawable-nodpi/inicioapp.png" alt="Initial Layout" width="220"></a>
-<a><img src="app/src/main/res/drawable/szcenzy.png" alt="NextButton" width="223"></a>
-<a><img src="app/src/main/res/drawable/lamine.png" alt="Lamine" width="222"></a>
-<a><img src="app/src/main/res/drawable/lewandowski.png" alt="Lewandowski" width="219"></a>
+<a><img src="app/src/main/res/drawable-nodpi/inicioapp.png" alt="Initial Layout" width="200"></a>
+<a><img src="app/src/main/res/drawable/szcenzy.png" alt="NextButton" width="203"></a>
+<a><img src="app/src/main/res/drawable/lamine.png" alt="Lamine" width="202"></a>
+<a><img src="app/src/main/res/drawable/lewandowski.png" alt="Lewandowski" width="299"></a>
 
 <p>The first image is Ter Stegen, the goalkeeper, and the last one Lewandowski (Striker). So, if we press previous at the start, the app show us Lewandowski, and if we go on with next button, Ter Stegen appears.</p>
 
