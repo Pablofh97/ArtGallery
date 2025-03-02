@@ -10,7 +10,7 @@
 >[!TIP]
 >You can copy the code using
 >``` 
-> THAT ICON ON THE RIGHT                                        --------------------------------------------------------->
+> THAT ICON ON THE RIGHT                               ---------------------------------->
 >```
 
 
