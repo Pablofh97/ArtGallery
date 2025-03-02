@@ -29,8 +29,9 @@ I've worked with buttons, two in this case, one with the functionality of going 
  ![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack-Compose-blue) ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white)
  ![Junit](https://img.shields.io/badge/junit-%23E33332?logo=junit5&logoColor=white)
 
+
+  **Training Course**  -->    <a href="https://developer.android.com/courses/android-basics-compose/course" target="_blank">https://developer.android.com/courses/android-basics-compose/course</a>
   
-  **Training Course**: <a href="https://developer.android.com/courses/android-basics-compose/course" target="_blank">https://developer.android.com/courses/android-basics-compose/course</a>
   Get the app [Here](#get-the-code)
 
   ## Next button functionality
