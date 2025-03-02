@@ -1,10 +1,23 @@
 # Android App
-- [Language and tools](#languages-and-tools)
 - [Next button functionality](#next-button-functionality)
 - [Previous button functionality](#previous-button-functionality)
 - [App appereance](#first-look-of-the-app)
 - [Tests](#tests)
+  
+>[!NOTE]
+>Not all palyers of F.C Barcelona are on this app.
 
+>[!TIP]
+>You can copy the code using
+>```
+> This right icon
+>```
+
+
+>[!IMPORTANT]
+>This is not an official app for F.C Barcelona
+ 
+<br> 
 
 This is a basic app I've made for learning about Android Studio with Jetpack Compose.
 It's mission is showing the players of a football team (F.C Barcelona). I've upload 14 players with their names 
@@ -44,7 +57,7 @@ internal fun previousImage(result : Int) : Int {
     return resultImage
 }
 ```
-This two functions have been used on the [Tests](#tests) directories. They have @VisibleForTesting annotation.
+This two functions have been used on the [Tests](#tests) directories. They have ``` @VisibleForTesting ``` annotation.
 ```Kotlin
 @VisibleForTesting
 internal fun previousImage(result : Int) : Int {
@@ -68,6 +81,7 @@ internal fun previousImage(result : Int) : Int {
 ## Tests
 This app has two differents kind of tests, Local and Instrumentation tests.
 ### Local test
+Local tests directly test methods from the app code, so the methods to be tested must be available to the testing classes and methods.
 ```Kotlin
 package com.example.artgallery
 
@@ -100,6 +114,7 @@ class ArtGalleryTests {
 }
 ```
 ### Instrumentation test
+Instrumentation tests test an actual instance of the app and its UI, so the UI content must be set, similar to how the content is set in the ```onCreate()``` method of the MainActivity.kt file when you wrote the code for the Tip Time app. 
 ```Kotlin
 package com.example.artgallery
 
